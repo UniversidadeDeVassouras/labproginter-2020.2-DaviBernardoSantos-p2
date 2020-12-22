@@ -4,133 +4,146 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./estilos.css" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/estilos.css')}}"/>
     <title> Linux Impulse</title>
   </head>
   <body>
-      <header class="fundo">
-          <article id="texto-inicial">
-              <section class="txt1">
-                <div>
-                    <p>uma seleção de produtos</p>
-                    <h1>especial para você</h1>
+      <div class="auto-1">
+            <header class="fundo">
+                <article id="texto-inicial">
+                    <section class="txt1">
+                        <div>
+                            <p>uma seleção de produtos</p>
+                            <h1>especial para você</h1>
+                            </div>
+                    </section>
+                    <section class="texto-inicial-3">
+                        <div>
+                            <p>
+                                Todos os produtos desta lista foram selecionados a partir de sua navegação. Aproveite!
+                            </p>
+                        </div>
+                    </section>
+                    <section class="flex-1">
+                        <div class="btn-1">
+                            <button class> Conheça a Linux</button>
+                        </div>
+                        <div class="btn-2">
+                            <button> Ajude o algoritimo</button>
+                        </div>
+                        <div class="btn-3"> 
+                            <button>Seus produtos </button>
+                        </div>
+                        <div class="btn-4">
+                            <button>Compartilhe</button>
+                        </div>  
+                    </section>
+                </article>
+            </header>
+                <br>
+                <br>
+                <br>
+            <article id="Corpo">
+                <section class="grid1">
+                    <div class="anuncio">
+                        <div class="titulo-anuncio">
+                            Ajude o algoritimo a ser certeiro
+                        </div>
+                        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna. 
+                            Mauris rhoncus erat sed interdum dignissim. 
+                            Suspendisse semper pretium consectetur. 
+                            Praesent bibendum arcu risus, sit amet iaculis ex tempus quis. 
+                            Cras et erat ut tellus vulputate tincidunt. Aenean lacinia euismod augue vel egestas. 
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                            <br>
+                            <br>
+                            Vestibulum vel urna tortor. Vivamus et arcu non felis tristique eleifend. Morbi eu condimentum urna. 
+                            Curabitur eu magna eget turpis condimentum ultrices. 
+                            Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat. 
+                            Etiam ultricies a ante vehicula pharetra. 
+                            Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. 
+                            Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo. 
+                            odio ante suscipit libero, at mattis augue est vel metus.iaculis ex tempus quis. 
+                        </p>
                     </div>
-              </section>
-              <section class="texto-inicial-3">
-                <div>
-                    <p>
-                        Todos os produtos desta lista foram selecionados a partir de sua navegação. Aproveite!
-                    </p>
+                    <div class="sidebar">
+                        <div id="seu-nome">
+                            <form>
+                                <label for="fname">Seu Nome</label>
+                                <input type="text" id="fname" name="fname">
+                            </form>
+                        </div>
+                        <div id="Email">
+                            <form>
+                                <label for="fname">Email</label>
+                                <input type="text" id="fname" name="fname">
+                            </form>
+                        </div>
+                        <div id="cpf">
+                            <form>
+                                <label for="fname">CPF</label>
+                                <input type="text" id="fname" name="fname">
+                            </form>
+                            <div id="genre">
+                                <ul class="genero">
+                                    <li>
+                                        <input type="radio" class="sexoMasc" name="genre" value="masculino">
+                                        <label for="male">Masculino</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" class="sexoFem" name="genre" value="feminino">
+                                        <label for="female">Feminino</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        <div id="enviar">
+                            <button class="button-enviar">Enviar</button> 
+                        </div>
+                    </div>
+                </section>
+
+            </article>   
+            <div class="linha">
+                <h3 class="title-lines"> <span>Sua seleção especial</span></h3>
+            </div>
+            <section id="produtos">
+                <section>
+                    <div>
+                    </div>
+            </section>
+                <div class="linha">
+                    <h3 class="title-lines"> <span>Compartilhe a novidade</span></h3>
                 </div>
-              </section>
-              <section class="flex-1">
-                <div class="btn-1">
-                    <button class> Conheça a Linux</button>
-                 </div>
-                <div class="btn-2">
-                    <button> Ajude o algoritimo</button>
-                </div>
-                <div class="btn-3"> 
-                    <button>Seus produtos </button>
-                </div>
-                <div class="btn-4">
-                    <button>Compartilhe</button>
-                </div>  
-              </section>
-          </article>
-      </header>
-      <br>
-      <br>
-      <br>
-      <article id="Corpo">
-        <section class="grid1">
-            <div class="anuncio">
-                <div class="titulo-anuncio">
-                    Ajude o algoritimo a ser certeiro
-                </div>
-                <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna. 
-                    Mauris rhoncus erat sed interdum dignissim. 
-                    Suspendisse semper pretium consectetur. 
-                    Praesent bibendum arcu risus, sit amet iaculis ex tempus quis. 
-                    Cras et erat ut tellus vulputate tincidunt. Aenean lacinia euismod augue vel egestas. 
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
                     <br>
                     <br>
-                    Vestibulum vel urna tortor. Vivamus et arcu non felis tristique eleifend. Morbi eu condimentum urna. 
-                    Curabitur eu magna eget turpis condimentum ultrices. 
-                    Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat. 
-                    Etiam ultricies a ante vehicula pharetra. 
-                    Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. 
-                    Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo. 
-                    odio ante suscipit libero, at mattis augue est vel metus.iaculis ex tempus quis. 
-                </p>
-            </div>
-            <div class="sidebar">
-                <div id="seu-nome">
-                    <form>
-                        <label for="fname">Seu Nome</label>
-                        <input type="text" id="fname" name="fname">
-                    </form>
-                </div>
-                <div id="Email">
-                    <form>
-                        <label for="fname">Email</label>
-                        <input type="text" id="fname" name="fname">
-                    </form>
-                </div>
-                <div id="cpf">
-                    <form>
-                        <label for="fname">CPF</label>
-                        <input type="text" id="fname" name="fname">
-                    </form>
-                 <div id="enviar">
-                    <button class="button-enviar">Enviar</button> 
-                </div>
-            </div>
-        </section>
-
-      </article>   
-      <div class="linha">
-        <h3 class="title-lines"> <span>Sua seleção especial</span></h3>
-    </div>
-      <section id="produtos">
-
-        <section>
-            <div>
-            </div>
-      </section>
-        <div class="linha">
-            <h3 class="title-lines"> <span>Compartilhe a novidade</span></h3>
+                    <div class="novidades">
+                        <p class="novidades">Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</a>
+                    </div>
+                    <section class="flex-3">
+                        <div id="nome-amigo">
+                            <form>
+                                <p class="amigo">Nome do seu amigo</p>
+                                <input type="text" id="rname" name="rname">
+                            </form>
+                        </div> 
+                        <div id="email-amigo">
+                            <form>
+                                <p class="email-amigo">Email do seu amigo</p>
+                                <input type="text" id="rname" name="rname">
+                            </form>
+                        </div> 
+                    </section>
+                        <div class="btn-enviar">
+                            <button class="enviar-para-amigo"> Enviar agora </button>
+                        </div>
+                    <section class="footer">
+                        <ul class="texto-final">
+                            <li> Testando sua habilidades em HTML, CSS e JS. </li>
+                            <li> Linux Impulse</li>
+                            <li> 2019 </li>
+                        </u>
+                    </section>    
         </div>
-        <br>
-        <br>
-            <div class="novidades">
-                <p class="novidades">Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</a>
-            </div>
-            <section class="flex-3">
-                <div id="nome-amigo">
-                    <form>
-                        <p class="amigo">Nome do seu amigo</p>
-                        <input type="text" id="rname" name="rname">
-                    </form>
-                </div> 
-                <div id="email-amigo">
-                    <form>
-                        <p class="email-amigo">Email do seu amigo</p>
-                        <input type="text" id="rname" name="rname">
-                    </form>
-                </div> 
-            </section>
-                <div class="btn-enviar">
-                    <button class="enviar-para-amigo"> Enviar agora </button>
-                </div>
-            <section class="footer">
-                <ul class="texto-final">
-                    <li> Testando sua habilidades em HTML, CSS e JS. </li>
-                    <li> Linux Impulse</li>
-                    <li> 2019 </li>
-                </ul>
-            </section>
     </body>
 </html>
