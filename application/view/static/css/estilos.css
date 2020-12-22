@@ -15,6 +15,9 @@ h1{
 }
 
 /** Header **/
+.auto-1{
+    overflow: hidden;
+}
 
 .fundo:after {     
     content: '';  
@@ -107,9 +110,14 @@ h1{
     color: #888888;
     
 }
+.sidebar{
+    flex-wrap: wrap;
+    max-width: 300PX;
+}
 .sidebar > div{
     margin-bottom: 30px;
     margin-left: 0px;
+
 
 }
 
@@ -127,14 +135,26 @@ h1{
     width: 300px;
     height: 25px;
 }
+
 #Corpo .grid1 .sidebar #Email #fname{
     width: 300px;
     height: 25px;
 }
+
 #Corpo .grid1 .sidebar #cpf #fname{
     width: 300px;
     height: 25px;
 }
+
+#Corpo .grid1 .sidebar #genre .genero{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 0;
+}
+
 #Corpo .grid1 .sidebar #enviar .button-enviar{
     width: 310px;
     height: 35px;
@@ -144,12 +164,13 @@ h1{
 #Corpo .grid1 .anuncio .texto{
     text-decoration: none;
 }
+
 .linha{
     color: #888888;
     margin-left: 10%;
     margin-right: 10%;
-
 }
+
 .title-lines {     
     overflow: hidden;     
     text-align: center;     
@@ -157,7 +178,8 @@ h1{
     font-size: 1.2rem;     
     font-weight: 600;     
     margin: 0 0 1rem 0;   
-}   
+}  
+
 .title-lines > span{    
     position: relative;    
     display: inline-block;   
@@ -170,10 +192,12 @@ h1{
     border-bottom: .15rem solid;    
     width: 100vw;   
     margin: 0 20px;   
-}   
+}  
+
 .title-lines > span:before{    
     right: 100%;   
 }  
+
 .title-lines > span:after{    
     left: 100%;   
 }
@@ -182,9 +206,10 @@ h1{
 /** Footer **/
 footer, ul, li{
     list-style: none;
-    font-family:Helvetica, sans-serif;
+    font-family:Helvetica;
     align-content: center;
     text-align: center;
+    font-size: 0.9rem;
 }
 
 .novidades .novidades{
@@ -201,6 +226,7 @@ footer, ul, li{
     margin: 0 auto;
     justify-content: center;
     color: #888888;
+    flex-wrap: wrap;
 
 }
 .flex-3 > div{
@@ -216,6 +242,7 @@ footer, ul, li{
     width: 400px;
     height: 25px;
 }
+
 .flex-3 #email-amigo #rname{
     width: 400px;
     height: 25px; 
@@ -225,6 +252,7 @@ footer, ul, li{
     text-align: left;
 
 }
+
 .flex-3 #email-amigo .email-amigo{
     text-align: left;
     
@@ -236,6 +264,7 @@ footer, ul, li{
     margin-left: 40%;
 
 }
+
 .btn-enviar button{
     max-width: 100%;
     display: block;
@@ -246,25 +275,27 @@ footer, ul, li{
     border: 1px solid #707070;
     height: 40px;
     text-align: center;
-   
 }
-
 
 .flex-4{
     display: flexbox;
     justify-content: center;
 }
+
 .flex-4 > div{
     text-align: center;
 
 }
+
 .footer ul{
     color: white;
     font-size: 1.1rem;
+  
     padding-top: 20px;
 }
 .footer li{
     padding: 5px;
+    display: block;
 }
 
 .footer {     
