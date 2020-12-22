@@ -1,0 +1,303 @@
+body, p, h1{
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica;
+}
+p{
+    padding-top: 2.0rem;
+ 
+}
+h1{
+    text-decoration: none;
+    display: grid;
+    font-size: 3.0rem;
+    color: white;
+}
+
+/** Header **/
+
+.fundo:after {     
+    content: '';  
+    position: absolute;   
+    top: 0;    
+    bottom: 0;   
+    right: 0;   
+    left: 0;  
+    width: 100%;   
+    height: 120%;  
+    background: #707070;     
+    -webkit-transform: skewY(2deg);     
+    transform: skewY(2deg);     
+    -webkit-transform-origin: top right;     
+    transform-origin: top right;     
+    z-index: -9;
+}
+
+.fundo{
+    width: 100%;     
+    height: 340px;     
+    background: #707070 0% 0% no-repeat padding-box;     
+    border: 1px solid #707070;     
+    opacity: 1;     
+    position: relative;     
+
+}
+#texto-inicial{
+    margin: 0 px;
+    padding: 10px;
+    padding-bottom: 100px;
+    display: grid;
+    text-align: center;
+    background-color:#707070;
+}
+.txt1 p{
+    color: white    ;
+}
+
+#texto-inicial h1{
+    font-size: 2.5rem;
+    padding-bottom: 0px;
+}
+.texto-inicial-3{
+    font-size: 0.8rem;
+    padding-bottom: 30px;
+
+}
+.texto-inicial-3 p{
+    color: white;
+}
+
+.flex-1{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flex-1 > div{
+    flex: 1 1 200;
+    margin:20px;
+}
+.flex-1 button{
+    max-width: 100%;
+    display: block;
+    border-radius: 6px;
+    font-size: 20px;
+    border: 2px solid #707070;
+    color: #888888;
+    width: 200;
+    height: 40px;
+}
+
+
+/** Body **/
+
+.titulo-anuncio{
+    font-size: 30px;
+    color: #888888;
+    margin-right: 100px;
+}
+.grid1{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-gap: 20px;
+    max-width: 900px;
+    padding:50px;
+    margin:10px auto;
+    color: #888888;
+    
+}
+.sidebar > div{
+    margin-bottom: 30px;
+    margin-left: 0px;
+
+}
+
+#enviar{
+    margin-top: 30px;
+    text-align: center;
+    width: 300px;
+}
+
+#Corpo .anuncio p{
+    margin-right: 70px;
+}
+
+#Corpo .grid1 .sidebar #seu-nome #fname{
+    width: 300px;
+    height: 25px;
+}
+#Corpo .grid1 .sidebar #Email #fname{
+    width: 300px;
+    height: 25px;
+}
+#Corpo .grid1 .sidebar #cpf #fname{
+    width: 300px;
+    height: 25px;
+}
+#Corpo .grid1 .sidebar #enviar .button-enviar{
+    width: 310px;
+    height: 35px;
+    color: #888888;
+}
+
+#Corpo .grid1 .anuncio .texto{
+    text-decoration: none;
+}
+.linha{
+    color: #888888;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.title-lines {     
+    overflow: hidden;     
+    text-align: center;     
+    color: var(--secundary-color);     
+    font-size: 1.2rem;     
+    font-weight: 600;     
+    margin: 0 0 1rem 0;   
+}   
+.title-lines > span{    
+    position: relative;    
+    display: inline-block;   
+}   
+    
+.title-lines > span:before, .title-lines > span:after{    
+    content: '';    
+    position: absolute;    
+    top: 50%;    
+    border-bottom: .15rem solid;    
+    width: 100vw;   
+    margin: 0 20px;   
+}   
+.title-lines > span:before{    
+    right: 100%;   
+}  
+.title-lines > span:after{    
+    left: 100%;   
+}
+ 
+
+/** Footer **/
+footer, ul, li{
+    list-style: none;
+    font-family:Helvetica, sans-serif;
+    align-content: center;
+    text-align: center;
+}
+
+.novidades .novidades{
+    align-content: center;
+    display: flex;
+    margin-left: 25%;
+    color: #888888;
+    padding-bottom: 1px;
+
+}
+
+.flex-3{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    color: #888888;
+
+}
+.flex-3 > div{
+    text-align: center;
+    padding:40px;
+    padding-top: 10px;
+    color: #888888;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.flex-3 #nome-amigo #rname{
+    width: 400px;
+    height: 25px;
+}
+.flex-3 #email-amigo #rname{
+    width: 400px;
+    height: 25px; 
+}
+
+.flex-3 #nome-amigo .amigo{
+    text-align: left;
+
+}
+.flex-3 #email-amigo .email-amigo{
+    text-align: left;
+    
+}
+
+.btn-enviar .enviar-para-amigo{
+    width: 250px;
+    height: 40px;
+    margin-left: 40%;
+
+}
+.btn-enviar button{
+    max-width: 100%;
+    display: block;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #888888;
+    width: 200;
+    border: 1px solid #707070;
+    height: 40px;
+    text-align: center;
+   
+}
+
+
+.flex-4{
+    display: flexbox;
+    justify-content: center;
+}
+.flex-4 > div{
+    text-align: center;
+
+}
+.footer ul{
+    color: white;
+    font-size: 1.1rem;
+    padding-top: 20px;
+}
+.footer li{
+    padding: 5px;
+}
+
+.footer {     
+    width: 100%;     
+    height: 250px;     
+    background: #707070 0% 0% no-repeat padding-box;     
+    border: 1px solid #707070;     
+    opacity: 1;     
+    position: relative;
+    margin-top: 150px;
+}   
+
+.footer:after{     
+    content: '';     
+    position: absolute;     
+    bottom: 0;     
+    right: 0;     
+    left: 0;     
+    width: 100%;     
+    height: 120%;     
+    background: #707070;     
+    -webkit-transform: skewY(-2deg);    
+    transform: skewY(-2deg);     
+    -webkit-transform-origin: bottom left;    
+    transform-origin: bottom left;     
+    z-index: -9;
+}
+
+
+
+
+
+
+
+
+
