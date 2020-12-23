@@ -107,7 +107,6 @@
                 <h3 class="title-lines"> <span>Sua seleção especial</span></h3>
                 <br>
                 <br>
-
             </div>
                 <section class="flex-0">
                         {% for produto in listaProdutos %}
@@ -117,10 +116,21 @@
                             <p id='descricao'> {{produto.get_descriçao()}}.</p> 
                             <p id='valor-original'>De: R${{produto.get_preço_antigo()}}</p> 
                             <h2 id='valor desconto'>Por: R${{produto.get_preço()}}</h2> 
-                            <p id='var-parcela'>ou {{produto.get_parcela()}}x de R${{produto.get_var_parcela()}}</p>
+                            <p class="p-cards">ou {{produto.get_parcela()}}x de R${{produto.get_var_parcela()}}</p>
+                            <br>
+
+                            <button class="comprar-produto"> Comprar </button>
                         </div>
                         {% endfor %}
                 </section>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="ainda-mais">
+                    <button> Ainda mais produtos aqui!</button>
+                </div>
                 <br>
                 <br>
                 <br>
