@@ -105,21 +105,26 @@
             </article>   
             <div class="linha">
                 <h3 class="title-lines"> <span>Sua seleção especial</span></h3>
+                <br>
+                <br>
+
             </div>
                 <section class="flex-0">
                         {% for produto in listaProdutos %}
-                        <div>
-                            <img id='imagem' src='https:{{produto.get_imagem()}}'>
-                        </div>
                         <div class="cards">
-                            <h3 id='nome-produto'>{{produto.get_nome()}}</h3>
-                            <p id='descricao'> {{produto.get_descriçao()}}.</p>
-                            <p id='valor-original'>De: R${{produto.get_preço_antigo()}}</p>
-                            <h2 id='valor desconto'>Por: R${{produto.get_preço()}}</h2>
+                            <img id='imagem' src='https:{{produto.get_imagem()}}'> 
+                            <h3 id='nome-produto'>{{produto.get_nome()}}</h3> 
+                            <p id='descricao'> {{produto.get_descriçao()}}.</p> 
+                            <p id='valor-original'>De: R${{produto.get_preço_antigo()}}</p> 
+                            <h2 id='valor desconto'>Por: R${{produto.get_preço()}}</h2> 
                             <p id='var-parcela'>ou {{produto.get_parcela()}}x de R${{produto.get_var_parcela()}}</p>
                         </div>
                         {% endfor %}
                 </section>
+                <br>
+                <br>
+                <br>
+                <br>
                 <div class="linha">
                     <h3 class="title-lines"> <span>Compartilhe a novidade</span></h3>
                 </div>
@@ -151,7 +156,7 @@
                             <li> Linux Impulse</li>
                             <li> 2019 </li>
                         </u>
-                    </section>    
+                </section>    
         </div>
     </body>
 </html>
