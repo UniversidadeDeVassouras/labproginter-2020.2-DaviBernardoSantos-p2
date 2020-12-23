@@ -22,12 +22,13 @@ img{
 .flex-0{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .flex-0 .cards{
-    margin-right: 50px;
-    margin-top: 50px;
-    
+    margin-right: 10px;
+    margin-top: 0 auto;
+    align-items: center;
 }
 
 .auto-1{
@@ -109,6 +110,28 @@ img{
 
 
 /** Body **/
+.auto-1 .flex-0{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-0{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-0 .cards{
+    margin-top: 0 auto;
+}
+
+
+.flex-0 > div{
+    width: 300px;
+    padding-bottom: 0px;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 
 
