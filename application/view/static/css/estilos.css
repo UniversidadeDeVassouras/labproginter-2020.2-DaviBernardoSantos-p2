@@ -13,8 +13,23 @@ h1{
     font-size: 3.0rem;
     color: white;
 }
+img{
+    max-width: 100%;
+    display: block;
+}
 
 /** Header **/
+.flex-0{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-0 .cards{
+    margin-right: 50px;
+    margin-top: 50px;
+    
+}
+
 .auto-1{
     overflow: hidden;
 }
@@ -94,6 +109,8 @@ h1{
 
 
 /** Body **/
+
+
 
 .titulo-anuncio{
     font-size: 30px;
