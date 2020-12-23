@@ -19,17 +19,6 @@ img{
 }
 
 /** Header **/
-.flex-0{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.flex-0 .cards{
-    margin-right: 10px;
-    margin-top: 0 auto;
-    align-items: center;
-}
 
 .auto-1{
     overflow: hidden;
@@ -108,8 +97,84 @@ img{
     height: 40px;
 }
 
-
 /** Body **/
+.flex-0{
+    display: flex;
+    flex-wrap: wrap;
+    color: #888888;
+    max-width: 970px;
+    margin: 0 auto;
+
+}
+
+.flex-0 > div{
+    flex:1 1 240px;
+    padding-top: 0 auto;
+
+}
+
+.flex-0 .cards p{
+    font-size: 15px;
+    width: 80%;
+}
+.flex-0 .cards .p-cards{
+    padding-top: 5px;
+}
+
+.flex-0 .cards button{
+    width: 200px;
+    background-color: white;
+    padding: 5px 32px;
+    text-align: center;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #888888;
+    border: 1px solid #707070;
+}
+
+.flex-0 .cards button:hover {
+    opacity: 1
+}
+
+.ainda-mais{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+}
+
+.ainda-mais button{
+    text-align: center;
+    width: 300px;
+    background-color: white;
+    padding: 15px 40px;
+    text-align: center;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 15px;
+    color: rgb(77, 77, 77);
+    border: 1px solid #707070;
+
+}
+.ainda-mais button:hover {
+    opacity: 1
+}
+
+
+/*----------- Bug de css
+
 .auto-1 .flex-0{
     display: flex;
     flex-wrap: wrap;
@@ -132,6 +197,19 @@ img{
     align-items: center;
     flex-wrap: wrap;
 }
+
+.flex-0{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-0 .cards{
+    margin-right: 10px;
+    margin-top: 0 auto;
+    align-items: center;
+}
+Bug de css-----------*/
 
 
 
@@ -162,9 +240,26 @@ img{
 }
 
 #enviar{
+    padding-top: 10px;
     margin-top: 30px;
     text-align: center;
     width: 300px;
+    background-color: white;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #797979;
+    
+}
+
+#enviar button:hover {
+    opacity: 2;
+
 }
 
 #Corpo .anuncio p{
@@ -305,16 +400,28 @@ footer, ul, li{
 
 }
 
-.btn-enviar button{
-    max-width: 100%;
-    display: block;
-    border-radius: 6px;
-    font-size: 20px;
+.btn-enviar .enviar-para-amigo{
+    background-color: white;
+    border: 1px solid;
     color: #888888;
-    width: 200;
-    border: 1px solid #707070;
-    height: 40px;
+    padding: 10px 32px;
     text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 40%;
+    border-radius: 6px;
+    color: rgb(77, 77, 77);
+    border: 1px solid #707070;
+    
+}
+
+.btn-enviar .enviar-para-amigo:hover{
+    opacity: 1;
 }
 
 .flex-4{
