@@ -111,14 +111,14 @@
                 <section class="flex-0">
                         {% for produto in listaProdutos %}
                         <div class="cards">
-                            <img id='imagem' src='https:{{produto.get_imagem()}}'> 
+                            <img id='imagem' src='https:{{produto.get_imagem()}}'>
                             <h3 id='nome-produto'>{{produto.get_nome()}}</h3> 
-                            <p id='descricao'> {{produto.get_descriçao()}}.</p> 
-                            <p id='valor-original'>De: R${{produto.get_preço_antigo()}}</p> 
-                            <h2 id='valor desconto'>Por: R${{produto.get_preço()}}</h2> 
+                            <p id='descriçao'> {{produto.get_descriçao()}}.</p> 
+                            <p id='valor'>De: R${{produto.get_preço_antigo()}}</p> 
+                            <h2 id='desconto'>Por: R${{produto.get_preço()}}</h2> 
                             <p class="p-cards">ou {{produto.get_parcela()}}x de R${{produto.get_var_parcela()}}</p>
                             <br>
-
+                            <br>
                             <button class="comprar-produto"> Comprar </button>
                         </div>
                         {% endfor %}
